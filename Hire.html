@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire a Driver — TractorLink</title>
+    <link rel="stylesheet" href="Tractor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="Tractorlink.Html" class="nav-logo">
+          <span class="logo-icon">🚜</span>
+          <span>Tractor<strong>Link</strong></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="Tractorlink.Html" class="nav-link">Home</a></li>
+          <li><a href="hire.html" class="nav-link active">Hire a Driver</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="dark-toggle"
+            id="darkToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="register.html" class="btn btn-primary nav-cta"
+            >Register as Driver</a
+          >
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+      <div class="container">
+        <p class="section-tag">Find Your Operator</p>
+        <h1>Hire a Tractor Driver</h1>
+        <p>Browse skilled operators available in your state right now</p>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <section class="section">
+      <div class="container">
+        <div class="hire-filters" id="hireFilters">
+          <div class="filter-group">
+            <label><i class="fas fa-map-marker-alt"></i> Filter by State</label>
+            <select id="stateFilter" class="filter-select">
+              <option value="all">All States</option>
+              <option value="Rivers">Rivers State</option>
+              <option value="Lagos">Lagos State</option>
+              <option value="Kano">Kano State</option>
+              <option value="Anambra">Anambra State</option>
+              <option value="Kaduna">Kaduna State</option>
+              <option value="Oyo">Oyo State</option>
+              <option value="Enugu">Enugu State</option>
+              <option value="Delta">Delta State</option>
+              <option value="Benue">Benue State</option>
+              <option value="Niger">Niger State</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label><i class="fas fa-tractor"></i> Filter by Tractor Type</label>
+            <select id="tractorFilter" class="filter-select">
+              <option value="all">All Types</option>
+              <option value="Ploughing">Ploughing</option>
+              <option value="Harrowing">Harrowing</option>
+              <option value="Ridging">Ridging</option>
+              <option value="Planting">Planting</option>
+              <option value="Harvesting">Harvesting</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" id="applyFilters">
+            <i class="fas fa-filter"></i> Apply Filters
+          </button>
+          <button class="btn btn-outline" id="clearFilters">
+            <i class="fas fa-times"></i> Clear
+          </button>
+        </div>
+
+        <!-- Results Count -->
+        <p class="results-count" id="resultsCount">Showing all drivers</p>
+
+        <!-- Drivers Grid -->
+        <div class="drivers-grid" id="driversGrid">
+          <!-- JavaScript fills this -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display: none">
+          <i class="fas fa-tractor"></i>
+          <h3>No drivers found</h3>
+          <p>Try adjusting your filters or check back later</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>
+            © <span class="current-year"></span> TractorLink. Built by CDS 💪
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Tractor.js"></script>
+  </body>
+</html>

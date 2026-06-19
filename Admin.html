@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard — TractorLink</title>
+    <link rel="stylesheet" href="Tractor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="Tractorlink.Html" class="nav-logo">
+          <span class="logo-icon">🚜</span>
+          <span>Tractor<strong>Link</strong></span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="Tractorlink.Html" class="nav-link">Home</a></li>
+          <li><a href="hire.html" class="nav-link">Hire a Driver</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+          <li><a href="admin.html" class="nav-link active">Admin</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            class="dark-toggle"
+            id="darkToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Admin Header -->
+    <div class="admin-header">
+      <div class="container">
+        <div class="admin-header-inner">
+          <div>
+            <p class="section-tag">Admin Portal</p>
+            <h1>TractorLink Dashboard</h1>
+          </div>
+          <button class="btn btn-danger" id="clearAllBtn">
+            <i class="fas fa-trash"></i> Clear All Data
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <!-- Stats Cards -->
+        <div class="admin-stats" id="adminStats">
+          <!-- JavaScript fills this -->
+        </div>
+
+        <!-- Tab Controls -->
+        <div class="admin-tabs">
+          <button class="tab-btn active" data-tab="pending">
+            <i class="fas fa-clock"></i> Pending
+            <span class="tab-count" id="pendingCount">0</span>
+          </button>
+          <button class="tab-btn" data-tab="approved">
+            <i class="fas fa-check-circle"></i> Approved
+            <span class="tab-count" id="approvedCount">0</span>
+          </button>
+          <button class="tab-btn" data-tab="all">
+            <i class="fas fa-list"></i> All Drivers
+            <span class="tab-count" id="allCount">0</span>
+          </button>
+        </div>
+
+        <!-- Drivers Table -->
+        <div class="admin-drivers" id="adminDrivers">
+          <!-- JavaScript fills this -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="adminEmptyState" style="display: none">
+          <i class="fas fa-tractor"></i>
+          <h3>No drivers registered yet</h3>
+          <p>Driver registrations will appear here once submitted</p>
+          <a href="register.html" class="btn btn-primary">Test Registration</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <p>
+            © <span class="current-year"></span> TractorLink Admin. Built by CDS
+            💪
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Tractor.js"></script>
+  </body>
+</html>

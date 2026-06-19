@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TractorLink connect Farmers with Tractor Operators</title>
+    <link rel="stylesheet" href="Tractor.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="Tractorlink.Html" class="nav-logo">
+          <span class="logo-icon">🚜</span>
+          <span>Tractor<strong>Link</strong></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="Tractorlink.Html" class="nav-link active">Home</a></li>
+          <li><a href="hire.html" class="nav-link">Hire a Driver</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+          <li><a href="admin.html" class="nav-link">Admin</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="dark-toggle"
+            id="darkToggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="hire.html" class="btn btn-primary nav-cta">Hire Now</a>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-tractor"></i>
+            Nigeria's #1 Tractor Hiring Platform
+          </div>
+          <h1>
+            Connect Farmers with
+            <span class="highlight">Expert Tractor</span> Operators
+          </h1>
+          <p class="hero-desc">
+            Find skilled tractor drivers in your area within minutes. Fast,
+            reliable and affordable agricultural services across all 36 states
+            of Nigeria.
+          </p>
+          <div class="hero-btns">
+            <a href="hire.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-search"></i> Find a Driver
+            </a>
+            <a href="register.html" class="btn btn-outline btn-lg">
+              <i class="fas fa-user-plus"></i> Register as Driver
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <strong id="driverCount">500+</strong>
+              <span>Registered Drivers</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>36</strong>
+              <span>States Covered</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>2,000+</strong>
+              <span>Farmers Served</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661837100702-0b91df70684e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Tractor working on a farm"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS ========== -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Simple Process</p>
+          <h2>How TractorLink Works</h2>
+          <p>Get your farm work done in three simple steps</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <i class="fas fa-search-location"></i>
+            </div>
+            <h3>Search Your Area</h3>
+            <p>
+              Enter your state and the type of tractor work you need. Browse
+              available drivers near you.
+            </p>
+          </div>
+          <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Connect with Driver</h3>
+            <p>
+              View driver profiles, check their experience and tractor type,
+              then contact them directly.
+            </p>
+          </div>
+          <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <i class="fas fa-tractor"></i>
+            </div>
+            <h3>Get Work Done</h3>
+            <p>
+              Your tractor driver arrives and gets your farm work done
+              efficiently and professionally.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="section section-green" id="features">
+      <div class="container">
+        <div class="section-header light">
+          <p class="section-tag">Why TractorLink</p>
+          <h2>Built for Nigerian Farmers</h2>
+          <p>Everything you need to run your farm efficiently</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Nationwide Coverage</h3>
+            <p>
+              Drivers registered across all 36 states — from Kano to Rivers
+              State and everywhere in between.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Verified Operators</h3>
+            <p>
+              Every driver is reviewed and approved by our admin team before
+              appearing on the platform.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Direct Contact</h3>
+            <p>
+              No middlemen. Contact your driver directly via phone. Fast and
+              straightforward.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>All Crop Types</h3>
+            <p>
+              Whether it's yam, rice, cassava or maize — our drivers have
+              experience with all Nigerian crops.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Quick Availability</h3>
+            <p>
+              Most drivers respond within 24 hours. Get your farm work scheduled
+              without long waits.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Safe and Reliable</h3>
+            <p>
+              All operators are experienced professionals with years of
+              agricultural machinery experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AVAILABLE DRIVERS PREVIEW ========== -->
+    <section class="section" id="drivers">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Available Now</p>
+          <h2>Featured Drivers</h2>
+          <p>Some of our top rated tractor operators</p>
+        </div>
+        <div class="drivers-grid" id="featuredDrivers">
+          <!-- JavaScript fills this -->
+        </div>
+        <div class="section-cta">
+          <a href="hire.html" class="btn btn-primary">
+            View All Drivers <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section section-cream" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">What Farmers Say</p>
+          <h2>Real Stories from Real Farmers</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "I found a tractor driver within 2 hours. He came the next morning
+              and ploughed my 5 acres perfectly. TractorLink saved my planting
+              season!"
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcc5SC6M-ATqA26pXZxvXkWpKrLzK9m5SOpw&s"
+                alt="Farmer"
+              />
+              <div>
+                <strong>Musa Abdullahi</strong>
+                <span>Farmer — Kano State</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "As a rice farmer in Anambra, I was struggling to find reliable
+              operators. TractorLink connected me with an excellent driver who's
+              now my regular operator."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpl6TTOdn7jtheZsyitNVWCTVH7ob9GdOCbg&s"
+                alt="Farmer"
+              />
+              <div>
+                <strong>Chukwuemeka Obi</strong>
+                <span>Rice Farmer — Anambra State</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "I registered as a driver on TractorLink and got my first hire
+              request the same week. The platform is simple and it works
+              perfectly on my phone."
+            </p>
+            <div class="testimonial-author">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Hbhdm3YOecQ6h_tIx28KLQ84AZbIRlBwJg&s"
+                alt="Driver"
+              />
+              <div>
+                <strong>Emmanuel Daka</strong>
+                <span>Tractor Operator — Rivers State</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="section section-dark-green">
+      <div class="container">
+        <div class="cta-section">
+          <h2>Ready to Transform Your Farm?</h2>
+          <p>Join thousands of Nigerian farmers already using TractorLink</p>
+          <div class="cta-btns">
+            <a href="hire.html" class="btn btn-amber btn-lg">
+              <i class="fas fa-search"></i> Find a Driver Today
+            </a>
+            <a href="register.html" class="btn btn-outline-light btn-lg">
+              <i class="fas fa-tractor"></i> Register as Operator
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="Tractorlink.Html" class="nav-logo">
+              <span class="logo-icon">🚜</span>
+              <span>Tractor<strong>Link</strong></span>
+            </a>
+            <p>
+              Connecting Nigerian farmers with skilled tractor operators across
+              all 36 states.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Platform</h4>
+            <ul>
+              <li><a href="hire.html">Hire a Driver</a></li>
+              <li><a href="register.html">Register as Driver</a></li>
+              <li><a href="admin.html">Admin Dashboard</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#how">How It Works</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Contact</h4>
+            <ul>
+              <li><i class="fas fa-phone"></i> +234 801 234 5678</li>
+              <li><i class="fas fa-envelope"></i> hello@tractorlink.ng</li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Port Harcourt, Nigeria
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span class="current-year"></span> TractorLink. Built by CDS 💪 —
+            Proudly Nigerian 🇳🇬
+          </p>
+          <a href="admin.html" class="admin-link">Admin Portal</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="Tractor.js"></script>
+  </body>
+</html>
